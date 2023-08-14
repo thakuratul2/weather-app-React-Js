@@ -3,6 +3,7 @@ import TopButtons from './components/TopButtons';
 import Inputs from './components/Inputs';
 import TimeAndLocation from './components/TimeAndLocation';
 import Details from './components/Details';
+import Forecast from './components/Forecast';
 
 const App = () => {
   return (
@@ -14,6 +15,8 @@ const App = () => {
       <Inputs />
       <TimeAndLocation />
       <Details />
+     <Forecast title="hourly forecase" />
+     <Forecast title="daily forecase" />
       </div>
     </>
   );
