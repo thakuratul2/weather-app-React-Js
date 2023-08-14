@@ -57,7 +57,7 @@ const Details = () => {
       <p className="font-light">
         Minimum: <span className='font-medium ml-1'>39°</span>
       </p>
-      <p className='font-light'>|</p>
+      
       </div>
     </div>
   );
