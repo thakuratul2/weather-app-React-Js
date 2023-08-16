@@ -4,8 +4,16 @@ import Inputs from './components/Inputs';
 import TimeAndLocation from './components/TimeAndLocation';
 import Details from './components/Details';
 import Forecast from './components/Forecast';
+import formattedData from './services/weather';
 
 const App = () => {
+const fetchData = async () => {
+  const data = await formattedData({q: 'meerut'});
+  console.log(data);
+};
+
+fetchData();
+
   return (
     <>
       <div className="mx-auto max-w-screen-md mt-4 py-5 px-32 bg-gradient-to-br from-cyan-700 to-blue-700 h-fit shadow-xl
