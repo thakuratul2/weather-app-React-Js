@@ -26,7 +26,6 @@ const TopButtons = () => {
 
         (
           <button key={city.id} className='text-white text-lg font-medium'>{city.title}</button>
-        
         ))}
       </div>
     </>
