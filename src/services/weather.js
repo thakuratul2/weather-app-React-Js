@@ -44,6 +44,7 @@ const formattedData = async (searchParam) => {
     const {lat,lon} = formattedCurrentData
 
     const formattedForecast = await getData('onecall',{
+        
         lat, lon, exclude: 'current,minutely,alerts', units:searchParam.units
     }).then(formatForecast);
 
